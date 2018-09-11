@@ -1,0 +1,67 @@
+#topPage{
+    background-color: #fff;
+}
+@media screen and (min-width:768px){
+    #signUpForm{
+        width: 60%;
+        max-width: 45em;
+    
+    }
+}
+#signUpForm{
+    padding: 7em 0px 6em 0px;
+}
+.row{
+    padding: 10px 20px;
+}
+#signUpForm input{
+    padding: 6px;
+}
+#signUpForm input::placeholder{
+    font-size: 16px;
+}
+#signUpForm input[type=submit]{
+    background-color: lightseagreen;
+    color: white;
+    font-size: 15px;
+    border:none;
+    border-radius: 3px;
+}
+.invalid{
+    color: red;
+}
+input:invalid{
+    color: red;
+}
+.valid{
+    color: darkgreen;
+}
+input:valid{
+    color: darkgreen;
+}
+#signUpForm .row input{
+    padding: 6px 3em;
+    font-size: 16px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+}
+#signUpForm .row input:focus{
+    border-color: dodgerblue;
+}
+span.msg{
+    color: red;
+}
+
+@media (min-width:480px) and (max-width:768px){
+    #signUpForm{
+        width: 80%;
+       
+    }
+}
+@media screen and (max-width:768px){
+    #signUpForm{
+         padding: 4em 0px 2em 0px;
+    }
+}

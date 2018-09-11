@@ -1,0 +1,796 @@
+* {
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    float: left
+}
+
+/*  -----------  nav bar  -----*/
+
+li{list-style-type: none;}
+a{text-decoration: none;}
+body {margin:0;background-color: lightgray}
+
+.topnav {
+  overflow: hidden;box-shadow: 2px 2px 2px 2px grey;
+  background-color:rgba(0,0,0,.8);
+  font-family:"Roboto", sans-serif; 
+  width: 100%;    
+}
+#sticky{position: fixed;
+    top: 0;width: 100%;
+    z-index: 99;
+}
+.navrow{float:right;
+}
+#ad{margin: 3px;margin-right: 10%
+}
+#ad a{color: red;padding: 6px 20px 6px 20px;
+    border: 2px solid red;border-radius: 50px;
+    max-width: 200px;
+}
+
+#icon a{padding:5px;position:absolute;
+right: 0;top:0;width: 50px;text-align: center}
+
+
+@media screen and (min-width:1000px){
+    #ad{margin-right:25%}
+    #icon a{right:10%}
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.icon{height: 40px;}
+
+.topnav a:hover {
+  background-color:#fff;
+  color: black;border-bottom: 1px solid coral;
+}
+
+.active {
+  background-color: purple;
+  color: white;border-bottom: 1px solid green;
+}
+
+.topnav .icon {
+  display: none;
+}
+.sidenav{display: none;}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+    #ad{margin-right: 40%}  
+}
+
+/*          sidenav             */
+.sidenav a {
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display:none;
+    transition: 0.3s;
+    font-family: "Roboto",sans-serif;
+    min-width: 160px;
+}
+
+.sidenav a:hover {
+    color: coral;background-color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right:0;
+    font-size: 32px;
+    padding:2px 13px 2px 13px;
+}
+.sidenav a.closebtn{text-align: right}
+@media (min-width:600px) and (max-width:768px){
+    .sidenav {
+    display: block;
+    height:15.4em;
+    width:0;
+    position: fixed;
+    z-index: 99;
+    top: 2.6em;
+    left: 0;
+    background-color:rgba(0,110,0,0.5);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 42px;
+}
+    .sidenav a{display: block;}
+
+
+/*
+    .topnav.responsive a#adv{
+        position: absolute;
+        top:5px;right: 40%;
+    }
+    .topnav.responsive a.icon{
+        width:53px;position: relative;
+    }
+*/
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {}
+  .topnav.responsive .icon {
+    position: relative;
+    
+    
+  }
+    #ad{
+        margin-right: 30%
+    }
+  .topnav.responsive a {
+      position: relative;
+    float: none;
+    display: block;
+    text-align:left;
+  }
+    .topnav.responsive a#adv{
+        position: absolute;
+        top:5px;right: 30%
+    }
+    .topnav.responsive a.icon{
+        width:53px
+    }
+    
+  
+}
+
+/*           image text           */
+.contain{
+    margin-top: 0px;
+    position: relative;
+    min-height: 18em;
+    overflow: hidden;
+    max-height: 18em;
+}
+.contain img{
+    vertical-align: middle;
+}
+.contain .content{
+    padding:5%;max-height: 18em;width: 100%;
+    position: absolute;top:0;right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.content .irow{
+    float: left;width: 50%;
+}
+.content #title{
+    font-family:"Merienda One",cursive;
+    text-align: right;padding-right: 15px;
+    border-right: 1px solid red ;
+    font-size: 1.6em;
+}
+#heading h1{
+    padding: 15px;
+    font-family: "Lato",sans-serif;
+    font-size:25px;
+    color: white;
+    margin-top: 0px;
+}
+form .search{
+    position:absolute;
+    bottom: 15px;
+    left: 25%;width: 50%;
+}
+.content input{
+    float: left;
+    padding: 8px;
+    font-size: 17px;
+    width: 80%;
+}
+button{float: left;
+    width:20%;
+    padding: 11px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+@media screen and (max-width:600px){
+    .contain .content{
+        padding:35px 0px 0px 0px;
+        min-height: 18em;
+    }
+    .content .irow{
+        width: 100%;
+    }
+    form .search{
+        width: 80%;
+        left: 10%;bottom: 25px;
+    
+    }
+    form .search input{
+        padding: 5px
+    }
+    .content #title{
+        font-size:1.1em;
+        text-align: center;
+        border-right: none;padding:
+    }
+
+    .content #heading h1{
+        font-size: 17px;
+        text-align: center;
+        padding: 0px 5px 2px 5px
+    }
+    .contain img{
+        min-height: 18em;
+    }
+}
+@media (min-width:600px) and (max-width:840px){
+  .contain .content{
+      padding:50px 2px 10px 2px;
+      min-height: 18em;
+    }
+    .content .irow{
+        padding: 10px 0px 0px 0px;
+    }
+  form .search{
+      bottom: 20px;left: 15%;
+        width: 70%;
+    }
+    .content #title{
+        font-size:1.1em;
+    }
+    .content #heading{
+        font-size: .8em
+    }
+}
+/*         filter         */
+.filter .filh h3{
+    padding: 8px 4em;
+    background-color: crimson;
+    color: white;
+    font-family: "Arial",sans-serif;
+}
+
+.filter{
+    padding: 5px 1% 5px 1% ;
+    font-family:"Roboto",sans-serif;
+    letter-spacing:0.6px;
+    background-color: white;
+}
+.filter div.filh{
+    display: inline-flex;
+}
+/*  sort  custom select  */
+.filter .sort{position: absolute;
+    right: 5px;margin-top: 15px
+}
+.sort .select-selected {
+  background-color: dodgerblue;
+    width: 100%;padding: 8px 4em;
+    border: 1px solid grey;max-width: 14em;
+    color: white;
+}
+.sort .select-selected:after{
+  bottom:10px;
+  right: 15px;
+}
+.sort .select-items {
+  position: absolute;
+  background-color:dodgerblue;
+  z-index: 99;width: 100%;
+}
+/*          side filter          */
+.sidefilter h2{
+    position: absolute;top: 0;
+    left: 4em;
+    font-family:"Muli",sans-serif;
+    color: darkblue;
+    letter-spacing: 1px;
+}
+.sidefilter a.closebtn{
+    font-size: 45px;
+}
+div.price{
+    margin-top: 2.3em;
+}
+.sidefilter div.fil{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display:non;
+    transition: 0.3s;
+    font-family: "Merienda One",sans-serif;
+    width:20em;
+    padding: 1px 0px 5px 30px;
+    margin: auto
+    
+}
+.sidefilter {
+    display: block;
+    
+    width:0;
+    position:absolute;
+    z-index: 1;
+    left:0;
+    background-color:rgba(255,255,255,0.9);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding: 55px 0px 30px 0px;
+    margin-bottom: 5em;
+    box-shadow: 5px 5px 30px grey;
+    margin: 10px 10px 5em
+}
+.sidefilter a.closebtn{
+    display:block;
+    color: darkred;
+}
+
+.sidefilter a.closebtn:hover {
+    color: white;
+    background-color: red;
+}
+.sidefilter .closebtn{
+    position: absolute;;
+    top:0 ;
+    right:0;
+    font-size: 32px;
+    padding:2px 13px 2px 13px;
+}
+.sidefilter a.closebtn{
+    text-align: right;
+}
+.price p{
+    display: inline-flex;
+    color:black;
+    margin-top: 0;
+}
+.sidefilter h3{
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    color:#333;
+}
+
+p#max{
+    margin-left:140px;
+}
+.price span{
+    color: black;
+    margin-left: 30px;
+    font-weight: 100;
+}
+/*          Slider           */
+.slider {
+    -webkit-appearance: none;
+    width: 85%;
+    height: 10px;border-radius: 10px;
+    background: #fff;
+    outline:none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border:1px solid black;
+    box-shadow: 0px 1px 3px 2px grey;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f53f0a;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+/*         user rating   */
+.rating ul{
+    width: 85%;
+    padding: 0px;
+}
+.rating button{
+    width: 40px;
+    margin-left: 5px;
+}
+.rating button:hover{
+    opacity: 0.7;
+}
+#zero{
+    background-color: red;
+}
+#one{
+    background-color:orange;
+}
+#two{
+    background-color:#44ff22;
+}
+#three{background-color: blue;
+}
+#four{background-color: green;}
+.rating input{
+    padding: 7px 0px 7px 0px;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 85%;font-family:"Verdana",sans-serif;
+    letter-spacing: 0.5px;
+    background-color: coral;
+    
+}
+.rating input:hover{
+    background-color:deepskyblue;
+    color: white;
+    
+}
+/*
+@media screen and (min-width:600px){
+    .filter h3{padding: 10px 10%;
+    margin: auto;
+    cursor: pointer;
+    background-color: lightblue;
+        
+    }
+}
+*/
+@media screen and (max-width:600px){
+    .sidefilter{
+        font-size: 15px;
+    }
+
+    .sidefilter div.fil{
+        margin: auto;
+    }
+    .filter h3,.sidefilter h3{
+        font-size: 15px
+    }
+    .sidefilter h2{
+        font-size: 18px;
+    }
+    .sidefilter a.closebtn{
+        font-size: 30px
+    }
+    .sidefilter{padding-top: 38px;
+    }
+    
+    .sort{font-size: 14px;
+    color: white;
+    }
+    .sort .select-selected {
+    width: 100%;padding: 8px 4em;
+    border: 1px solid grey;margin-top:0px;
+
+    }
+
+}
+/* php style */
+.main{
+	width: 75%;
+	margin:auto;
+	min-width: 24em;
+	height: 150px;	
+	background-color: white;
+	box-shadow: 0.1px 0.1px 0.1px 0.5px gray;
+	border-radius: 2px;
+    margin-top: 20px;
+    border-top: 1px solid gray;
+}
+.main .img{
+    background-color: lightblue;
+	color: white;
+	text-align: center;
+	width: 93%;
+	height:120px;
+	margin: 10px;
+}
+.main .image {
+    width: 25%;
+	
+}
+
+.deal a{
+	font-size: 15px;
+	color:green;
+	padding: 3px 8px; 
+	border:2px solid green;
+    cursor: pointer;
+    font-weight: bold;
+}
+.deal a:hover{
+    padding: 6px 12px;
+    border:none;
+    background-color: darkgreen;
+    color:white;
+}
+.main .deal{
+	width: 25%;
+	font-family: Arial;
+	text-align: center;
+	border-left:1px solid grey;
+}
+.deal h4{
+	margin-top: 17px;
+	margin-bottom:10px;
+	font-weight: 300;
+}
+		.main .row{
+			float: left;
+			margin:5px;
+			min-height:9em;
+		
+		}
+		.main .name{
+			width: 45.5%;
+			border-left: 1px solid grey;
+		}
+		.name h3{
+			color:crimson;
+			font-family: Arial;
+			padding-left:5%;
+            margin-bottom: 1px;
+		}
+		.deal span{
+			color:red;
+			margin-bottom: 10px;
+		}
+		.name h4{
+			font-family:"Open Sans",sans-serif;
+			font-size: 15px;
+			letter-spacing: 0.4px;
+	
+			margin: 0;
+			padding: 1px 10%;
+		}
+		.name span{
+			color:blue;
+		}
+		#rating{
+			font-family:"Verdana",sans-serif;
+
+			}
+		.main p{
+			font-size: 11px;
+			font-family: "Arial",sans-serif;
+		}
+		@media screen and (max-width: 480px){
+			.name h4{
+				font-size: 12px;
+				padding: .5px 10%;}
+			.name h3{
+				margin-bottom: 1px;
+			}
+			.main .name{
+				width:40%;
+			}
+			.main .row{
+                min-height: 140px
+            }
+		}
+	
+		@media screen and (max-width: 600px){
+			.main{
+				width:100%;
+				
+			}
+			.main .row{
+				min-height: 140px;
+			}
+			.main .name{
+				width: 42%;
+			}
+			
+			.name h3{
+				font-size: 15.5px;
+                
+			}
+		
+			.name h4{
+				font-size: 13px;
+				letter-spacing: 0px;
+			}
+			.deal h4{
+				font-size: 15px;
+			}
+            .deal a{
+                padding:2px 6px;
+            }
+            .deal a:hover{
+                padding:4px 8px;
+            }
+			.deal span{
+				padding-left: 10px
+			}
+			
+			.main p{
+				display: none;
+			}
+		}
+		@media (min-width:600px) and (max-width: 780px){
+			.main{
+				width:98%;
+				height: 150px;
+			}
+			.main .row{
+				min-height:9em;
+                margin: 2px;
+			}
+			.name h3{
+				font-size: 16px;
+				padding-left:10px;
+			 
+			}
+			.name h4{
+				font-size: 14px;
+				letter-spacing: 0px;
+			}
+			.deal h4{
+				font-size: 16.2px;
+			}
+			.main .img{
+				width: 90% ;
+		
+			}
+			
+		}
+		@media (min-width: 781px) and (max-width:920px){
+			.main{
+				width: 98%;
+			}
+			
+			.name h3{
+				font-size: 18px;
+			}
+			.name h4{
+				font-size:14px;
+			}
+			
+
+
+		}
+		@media (min-width: 920px) and (max-width: 1080px){
+			.main{
+				width:90%;
+			}
+		}
+footer {
+/*      background-color: #2d2d30;*/
+      color: #f5f5f5;
+      padding: 10px;
+    background: linear-gradient(-40deg,rgba(0,20,120,0.9),rgba(120,20,0,0.9))
+  }
+  footer a,footer p {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  } 
+footer p{
+    font-family: "Lato",sans-serif;
+    word-spacing: 2px;
+}
+footer .container a i{
+    font-size: 20px;
+    padding: 7px;
+    margin: 5px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.fa-facebook{
+    background-color: white;
+    color: darkblue;
+    
+}
+.fa-twitter{
+    color: deepskyblue
+}
+.fa-youtube{
+    color: red;
+}
+.fa-instagram{
+    color:red;
+}
+footer .col-sm-4 .glyphicon{
+    color: black;
+}
+footer input{
+    text-align: center;
+}
+footer form{
+    color: black;
+}
+footer .container .col-sm-4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.copyright{
+    border-top: 1px solid gray;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

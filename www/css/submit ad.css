@@ -1,0 +1,221 @@
+
+.modal label p{
+    font-size: 15px;
+}
+.modal-body{
+    width: 90%;
+    margin: auto;
+}
+.modal li{
+    list-style: none;
+    display: inline-flex;
+}
+.close{
+    position: absolute;
+    top: 15px;right: 25px;
+    padding: 10px;
+}
+.modal input{
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.modal input[type=checkbox]{
+    box-shadow: 0px 0px 0px ;
+}
+.modal li input{
+    width: 100%;
+}
+@media (min-width:480px) and (max-width:768px){
+    .modal{
+    width: 80%;       
+    margin: auto;
+  }
+   
+ 
+}
+.row.lastname{
+    padding-top: 0px;
+}
+ 
+.row{
+    padding: 20px 0px;
+    background-color:white;
+    box-shadow: 0px 0px 0px gray;
+/*    background: linear-gradient(-90deg,rgba(255,255,255,.9),rgba(110,200,200,.8))*/
+}
+#submitform{
+    padding:80px 0px;
+    
+}
+#submitform .container{
+    width: 70%;
+    margin: auto;
+    border:1.5px dotted #f48a30;
+
+/*    box-shadow: 0px 0px 15px gray;*/
+}
+
+.container h3{
+    color: white;
+    
+}
+.container-fluid .container .head{
+    border-bottom: 0px solid gray;
+    background-color: #f48a10
+
+}
+#submitform #name{
+    margin-top:5px;
+    
+}
+#submitform input,select{
+    padding:6px;
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    font-size: 16px;
+    letter-spacing: .5px;
+    font-family: "Lato",sans-serif;
+    border-radius: 3px;
+    
+}
+ #submitform select{
+    padding-left: 25%;
+     font-size: 17px;
+}
+
+#submitform input[type=submit]{
+    background-color:#f48a30;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0px;
+    margin: auto;
+    width: 60%;
+    
+}
+#submitform input[type=submit]:hover{
+    box-shadow: 2px 2px 5px black;
+
+}
+#submitform label{
+    font-size: 17px;
+    font-family: "Work Sans",sans-serif;
+    color: black;
+
+}
+span{
+    color: red;
+    font-size: 16px;
+}
+
+input,select{
+    border: 1px solid gray;
+}
+#submitform input[type=text],input[type=email],select:valid{
+    color:darkgreen;
+}
+/*
+#submitform .valid{
+    color:darkgreen;
+}
+*/
+#submitform select:valid{
+    color: darkgreen;
+}
+
+#submitform input[type=text]:invalid{
+    color:#f48a30;
+}
+#submitform input[type=email]:invalid{
+    color:#f48a30;
+}
+#submitform .invalid{
+    color: #f48a30;
+}
+
+ #submitform input:hover{
+    border: 1px solid #f48a30;
+    
+}
+#submitform input:hover::placeholder{
+    color: #f48a30;
+}
+select:hover{
+    border: 1px solid #f48a30;
+    
+}
+
+input:focus{
+    border: 1px solid #f48a30;
+}
+select:focus{
+    border: 1px solid #f48a30;
+}
+.row p{
+    color: blue;
+    font-family: "Playball",cursive;
+    font-size: 18px;
+}
+@media screen and (max-width:768px){
+    .col-sm-6{
+        width: 60%;
+        margin: auto;
+        font-size: 16px;
+        
+    }
+     #submitform .container{
+        width: 90%;
+         margin: auto;
+    }
+    #submitform .col-sm-5{
+        text-align: left;
+        padding-left: 45px;
+        
+    }
+    #submitform input,textarea,select{
+        font-size: 15px;
+    }
+    #submitform .row{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #submitform label h4{
+        font-size: 16px;
+    }
+    .row p{
+        font-family: Roboto,sans-serif;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:600px){
+    #submitform .col-sm-6{
+        width: 80%;
+        font-size: 15px;
+    }
+    input[type=reset],input[type=submit]{
+        width: 100%;
+    }
+}
+.foot{
+    border-top: 2px solid lightgray;
+/*    background: linear-gradient(-90deg,rgba(10,120,220,.8),rgba(20,20,250,.7))*/
+}
+#submitform li{
+    list-style: none;
+    display: inline-flex;
+    margin-bottom:20px;
+    
+}
+#submitform input[type=reset]{
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 10px 0px; 
+    font-size: 18px;
+    margin: auto;
+    width: 60%;
+}
+#submitform h5{
+    font-size: 17px;
+}

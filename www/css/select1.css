@@ -1,0 +1,60 @@
+.custom-select {
+  position: relative;
+
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+    background-color: cadetblue;
+    width: 85.5%;padding: 8px 40px;
+    border: 1px solid grey;
+    cursor: pointer;
+    font-family: "Arial",sans-serif;
+    
+
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  bottom:12px;
+  right: 55px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  bottom: 22px;
+}
+/*style the items (options)*/
+.select-items div {
+  color: #ffffff;
+  padding: 8px 40px;
+    width:100%;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+    font-family: "Arial",sans-serif;
+
+
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color:cadetblue;
+  z-index: 1;width: 79%;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width:768px){
+    
+}

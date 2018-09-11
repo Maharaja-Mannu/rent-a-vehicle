@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+        rentanyvehicle
+    </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/header&footer.css">
+    <link rel="stylesheet" type="text/css" href="css/sign%20up.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300|Muli|Open+Sans:300|Sonsie+One|Merienda One|Ovo|PT+Serif+Caption|Scope+One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+<body id="topPage">	
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">LOGO</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#services">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a href="submit ad.html">SUBMIT A FREE AD</a></li>
+        <li><a href="take on rent.php">TAKE ON RENT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+          <li><a href="">SIGN IN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div id="signUpForm" class="container">
+
+        <form method="post" action="<?php echo htmlspecialchars(_SERVER['PHP_SElF']);?>" class="col-sm-12">
+            <h2>SIGN UP</h2>
+            <h3>Already Registered? <a>Sign in</a></h3>
+            <div class="row">
+                <label for="name" class="col-sm-5 col-xs-12"><h4>Name</h4></label>
+                <span class="help col-sm-7 col-xs-12" hidden="hidden"><p>Please Enter Your Name</p></span>
+                <input type="text" name="name" id="name" class="col-sm-7 col-xs-12 " placeholder="Name" pattern="[a-zA-Z][a-zA-Z\s]*" required>
+            </div>
+            <div class="row">
+                <label for="email" class="col-sm-5 col-xs-12" ><h4>Email</h4></label>
+                <span class="help col-sm-7 col-xs-12" hidden="hidden"><p>Please Enter Your Email</p></span>
+<!--                <span class="error">
+                    <?php echo "<p>".$emailErr."</p>"; ?>
+                    </span>
+-->
+                <input type="email" id="email" name="email" class="col-sm-7 col-xs-12" placeholder="demo@domain.com" required >
+                
+            </div>
+            <div class="row">
+                <label for="phone" class="col-sm-5 col-xs-12"><h4>Phone</h4></label>
+                <span class="help col-sm-7 col-xs-12" hidden="hidden"><p>Enter only 10 digit</p> </span>
+<!--
+                <span class="error">
+                <?php echo "<p>".$phoneErr."</p>";?>
+                </span>
+                
+-->
+                <input type="tel" name="phone" id="phone" class="invalid col-sm-7 col-xs-12" maxlength="10" placeholder="Only 10 digit" required pattern="[0-9]{10}">
+            </div>
+            <div class="row">
+                <label for="pwd" class="col-sm-5 col-xs-12"><h4>Password</h4></label>
+<!--
+                <span class="error">
+                <?php echo "<p>".$pwdErr."</p>";?>
+                </span>
+-->
+                <input type="password" name="pwd" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="col-sm-7 col-xs-12" required data-toggle="tooltip" title="Atleast 8 character and must contain upper case, lower case, number, special character">
+            </div>
+            <div class="row">
+                <label for="cnfpwd" class="col-sm-5 col-xs-12">
+                <h4>Confirm Password</h4></label>
+                <span class="col-sm-6 col-xs-12" id="cnfpwdErr" hidden="hidden"><p>Password should be same.</p></span>
+<!--                <span class="error col-sm-7 col-xs-12">
+                    <?php echo "<p>".$pwdErr."</p>"; ?>
+                    </span>
+-->
+                <input type="password" name="cnfpwd" id="cnfpwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="col-sm-7 col-xs-12 invalid" required data-toggle="tooltip" title="Must be same as password">
+            </div>
+                <p class="col-sm-8 col-xs-12">By creating an account you agree to our <a>Terms &amp; Conditions</a></p>
+                <input type="submit" class="col-sm-4 col-xs-12" >
+            
+        </form>
+    
+    </div>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#indexPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br>
+  <div class="container">
+      <div class="col-sm-4">
+          <h5>LET'S STAY IN TOUCH</h5>
+          <form>
+          <input type="email" class="group" placeholder="Enter Email Address" name="email" required >
+          <button type="submit" name="submit"><span><i class="fa fa-angle-right"></i></span></button>
+          </form>
+          
+      </div>
+      <div class="col-sm-4">
+          <div class="col-sm-6">
+          <h5>LEGAL</h5>
+          <a href="#"><p>Terms &amp; Conditions</p></a>
+          </div>
+          <div class="col-sm-6">
+              <h5>SUPPORT</h5>
+              <a href="#"><p>Feedback</p></a>
+          </div>
+      </div>
+      
+      <div class="col-sm-4">
+          <h5>CONNECT WITH US</h5>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"> <i class="fa fa-youtube" ></i></a>
+          <a href="#"> <i class="fa fa-instagram"></i></a>
+      </div>
+      <p class="col-sm-12 copyright" >&copy; Copyright 2018 rentanyvehicle. All rights reserved.</p>
+        
+    </div>
+</footer>
+
+<script src="js/mainjquery.js"></script>
+    <script>
+        $(function(){
+            $('inpu').focus(function(){
+                $(this).prev('span.help').removeAttr('hidden');
+            }).blur(function(){
+                $('span.help').attr('hidden','hidden');
+                
+            });
+//            var value1=$('#pwd').val();
+//            var value2=$('#cnfpwd').val();
+//            if(value1==value2){
+//               $('span#cnfpwd').attr('hidden','hidden');
+//            }else{
+//                $('span#cnfpwd').removeAttr('hidden');
+//                
+//            }
+        });
+        
+    </script>
+        <script>
+        var phone=document.getElementById('phone');
+        phone.onkeyup=function(){
+            var numbers=/[0-9]{10}/g;
+            if(phone.value.match(numbers)){
+                phone.classList.remove("invalid");
+                phone.classList.add("valid");
+
+            } else {
+                phone.classList.remove("valid");
+                phone.classList.add("invalid");
+            }
+        }
+        
+        var cnfpwd=document.getElementById('cnfpwd');
+            
+        cnfpwd.onkeyup=function() {
+            var p1 = document.getElementById("pwd");
+            var p2 = document.getElementById("cnfpwd");
+            if (p1.value !== p2.value) {
+                p2.setCustomValidity("Passwords do not match");
+                p2.classList.remove("valid");
+                p2.classList.add('invalid');
+            
+            } else {
+                p2.setCustomValidity("");
+                p2.classList.remove("invalid");
+                p2.classList.add('valid')
+            
+            }
+        }
+
+    </script>
+    
+    
+
+    
+        
+
+</body>
+</html>

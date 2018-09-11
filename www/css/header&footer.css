@@ -1,0 +1,91 @@
+/*Nav bar*/
+nav{
+    background-color:rgba(255,255,255,.9);
+}
+nav button span{
+    background-color:white;
+    z-index: 1;
+}
+.navbar{
+    background-color:rgba(255,255,255,.9);
+    box-shadow: 0px 0px 10px grey;
+    
+}
+nav .navbar-toggle{
+    border-radius: 0px;
+    background-color: darkturquoise
+}
+nav .navbar-toggle:hover{
+    background-color: darkcyan;
+}
+.navbar-header {
+    color: crimson
+}
+.navbar li a:hover{
+    color:white;
+    
+}
+#myNavbar a:hover{
+    background-color:darkcyan;
+    
+}
+/*   footer    */
+footer {
+    /*background-color: #2d2d30;*/
+      color: #f5f5f5;
+      padding: 10px;
+    background: linear-gradient(-40deg,rgba(0,20,120,0.9),rgba(120,20,0,0.9))
+  }
+  footer a,footer p {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  } 
+footer p{
+    font-family: "Lato",sans-serif;
+    word-spacing: 2px;
+}
+footer .container a i{
+    font-size: 20px;
+    padding: 7px;
+    margin: 5px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.fa-facebook{
+    background-color: white;
+    color: darkblue;
+    
+}
+.fa-twitter{
+    color: deepskyblue
+}
+.fa-youtube{
+    color: red;
+}
+.fa-instagram{
+    color:red;
+}
+footer .col-sm-4 .glyphicon{
+    color: black;
+}
+footer input{
+    text-align: center;
+}
+footer form{
+    color: black;
+}
+footer .container .col-sm-4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.copyright{
+    border-top: 1px solid gray;
+    margin-top: 5px;
+    padding-top: 5px;
+}

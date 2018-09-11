@@ -1,0 +1,148 @@
+
+/*About page body*/
+
+#myContainer{
+    background: linear-gradient(-90deg,rgba(250,20,0,.8),rgba(00,200,220,0.9) )
+}
+#myContainer{
+    margin-top: 3.5em;
+    background-color:;
+}
+#myContainer h2{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+}
+#myContainer h4{
+    font-family: "Montserrat",sans-serif;
+}
+#myContainer .row .col-sm-8{
+    padding: 50px 10%
+}
+#myContainer button{
+    float: right;
+}
+#myContainer .col-sm-4{
+    padding: 80px 40px;
+    text-align: center;
+}
+#myContainer a{
+    padding: 8px 30px;
+    border:2px solid darkmagenta;
+    color: darkmagenta;
+    font-size: 17px;
+    text-decoration: none;
+}
+#myContainer a:hover{
+    background-color: darkmagenta;
+    color: white;
+    
+}
+.right{
+    float: right;
+}
+/*     card    */
+#about h3{
+
+    
+}
+@media screen and (min-width:991px){
+    #about .container{
+    width: 75%;
+  }
+}
+@media screen and (max-width:768px){
+    #myContainer .col-sm-4{
+    padding: 10px 40px;
+    text-align: center;
+}
+    
+}
+@media (min-width:480px) and (max-width:768px){
+    #about .container{
+        width: 60%;
+    }
+}
+@media screen and (max-width:480px){
+    #about .container{
+        width: 80%;
+    }
+}
+
+.card{
+    margin: auto;
+    background-color: rgba(250,250,250,0.9);
+    box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card img{
+    
+    
+}
+.card p{
+    font-family:"roboto",sans-serif;
+    font-size: 15px;
+    padding-bottom: 8px
+}
+.contain{
+    padding: 2px;
+    padding-bottom: 30px;
+}
+ #about a{
+    text-decoration: none;
+}
+.card a{
+    padding: 8px 50px;
+    border: 1px solid darkcyan;
+    font-size: 17px;
+    background-color: darkcyan;
+    color: white;
+    
+}
+#about a:hover{
+    color:white;
+    opacity: .8
+    
+}
+#about{
+    background-color: #eee;
+    padding-bottom:40px;
+}
+.glyphicon-globe{
+    font-size: 150px;
+    color: lightskyblue
+}
+.slideanim {
+    
+
+}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
